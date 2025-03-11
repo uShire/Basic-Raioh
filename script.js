@@ -48,18 +48,3 @@ function removeActiveContent() {
 		content.classList.remove("active");
 	});
 }
-
-// const abtImg = document.querySelectorAll(".abt_img img");
-// abtImg.forEach((imahe) => {
-// 	imahe.addEventListener("mouseover", () => {
-// 		imahe.classList.add("open");
-// 	});
-// 	imahe.addEventListener("mouseout", () => {
-// 		imahe.classList.remove("open");
-// 	});
-// 	if (!imahe.classList.contains("orig open")) {
-// 		imahe.style("width:2rem;");
-// 	} else {
-// 		imahe.style("width:10rem;");
-// 	}
-// });
