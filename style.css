@@ -431,7 +431,6 @@ img {
 .tabs .tabs_nav ul {
 	display: flex;
 	align-items: center;
-	gap: 5rem;
 	justify-content: center;
 	margin-top: 5rem;
 }
@@ -463,6 +462,7 @@ img {
 	margin: 0 auto;
 	position: absolute;
 	opacity: 0;
+	transform: translateX(15rem);
 	transition: 0.5s ease;
 	align-items: center;
 }
@@ -471,6 +471,7 @@ img {
 }
 .tabs .tabs_item.active {
 	opacity: 1;
+	transform: translateX(0rem);
 	transition: 0.5s ease;
 }
 .tabs .tabs_item img {
@@ -484,7 +485,21 @@ img {
 	font-weight: 600;
 	margin-bottom: 2rem;
 }
-
+@media screen and (max-width: 500px) {
+	.tabs .tabs_nav ul li {
+		padding: 1rem;
+	}
+	.tabs .tabs_item {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		text-align: center;
+		padding: 0 3rem;
+	}
+	.tabs .tabs_content {
+		min-height: 500px;
+	}
+}
 /* PROGRAM */
 .program {
 	padding: 5rem 0;
